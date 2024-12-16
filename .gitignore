@@ -1,0 +1,9 @@
+renv
+node_modules
+.vscode
+.Rproj.user/
+.RData
+.Rhistory
+.Rprofile
+PF-BigData.Rproj
+renv.lock

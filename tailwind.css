@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+  font-family: "Quicksand"; /* Nombre personalizado de la fuente */
+  src: url("Quicksand.ttf") format("truetype");
+  font-weight: 300 ; /* Define pesos si tienes varias versiones */
+  font-style: normal;  /* Estilo normal */
+}
+
+.quicksand-title {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Negrita */
+  font-style: normal;
+}
+
+.quicksand-body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+.navbar-brand, .container-fluid {
+  background-color: #191c20;
+}
+li.active > a {
+  background-color: #164974 !important;
+  color: #d0e4ff !important;
+  font-family: Quicksand;
+  font-weight: 700;
+}
+
+li > a {
+  font-family: Quicksand;
+  font-weight: 700;
+}
+
+.tab-pane.active{
+  background-color: #3b4857;
+  margin: 0 !important; /* Eliminar márgenes */
+  padding: 8px 16px; /* Ajustar padding */
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.container >.container-fluid{
+  background-color: transparent;
+}
+
+.tab-pane.active{
+  min-height: 500px;
+  color: #e1e2e8;
+  font-family: Quicksand;
+  font-weight: 800;
+}
+
+.tab-pane.active * .well {
+  background-color: #1d2024;
+  color: #c2c7cf;
+  border: none;
+  border-radius: 20px;
+}
+.btn.btn-default.btn-file {
+  background-color: #514060;
+  color: #f1daff;
+  border: none;
+  border-radius: 20px;
+}
+.input-group > .form-control{
+  background-color: #d5bee5;
+  color: #3a2948;
+  border: none;
+  border-radius: 20px;
+  margin: 0px;
+}
+.input-group > .form-control::placeholder{
+  color: #3a2948;
+}
+#load_data-use_sample, #train_model-train, #prediction-predict_btn, #prediction-predict_file_btn, #export-download_predictions, #export-download_metrics{
+  background-color: #514060;
+  color: #f1daff;
+  border: none;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.datatables.html-widget.html-widget-output.shiny-report-size.html-fill-item.shiny-bound-output{
+  overflow-x: auto;
+  color: #e1e2e8;
+}
+
+.selectize-input.items.not-full, .selectize-input.items.full.has-options.has-items{
+  background-color: #514060;
+  color: #f1daff;
+  border: none;
+  border-radius: 20px;
+}
+
+.selectize-input.items.not-full.focus{
+  background-color: #d5bee5;
+  color: #3a2948;
+  border: none;
+  border-radius: 20px;
+}
+
+.selectize-dropdown{
+  background-color: #514060;
+  color: #f1daff;
+  border: none;
+  border-radius: 20px;
+}
+
+.shiny-input-number.form-control.shiny-bound-input{
+  background-color: #514060;
+  color: #f1daff;
+  border: none;
+  border-radius: 20px;
+}
